@@ -1,0 +1,430 @@
+
+
+/*
+  @ Global Elements
+  @ Standard global element definitions.
+*/
+* {
+    margin:0px;
+    padding:0px;
+    font-family:"Open Sans", "Helvetica", "Sans-Serif";
+}
+*:focus, *:active {
+    outline: none!important;
+}
+*:focus * {
+    outline:0;
+}
+.clear {
+    clear:both;
+}
+body {
+    overflow-x:hidden;
+}
+img {
+    border:none;
+}
+img.bordered {
+    padding:5px;
+    border:1px dotted #bbb;
+}
+h2, h2 a {
+    line-height:38px;
+    font-weight:500;
+    font-size:28px;
+}
+h3, h3 a {
+    font-size:24px;
+    line-height:32px;
+    color:#333;
+    font-weight:500;
+}
+h4 {
+    font-size:18px;
+    color:#333;
+    font-weight:400;
+}
+h5 {
+    font-size:14px;
+    text-shadow:1px 1px 1px #fff;
+    color:#666;
+}
+p {
+    font-size:14px;
+    color:#444;
+    line-height:24px;
+}
+a, a:hover {
+    text-decoration:none;
+    color:#24A5D5;
+    outline:none;
+}
+ul {
+    margin-left:0px;
+}
+p input[type="checkbox"] {
+    float:left;
+    margin-right:5px;
+    margin-top:6px;
+}
+input[type="text"], input[type="password"] {
+    border:2px solid #b4bbc1;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    border-radius:7px;
+    color:#78838e;
+    padding:8px 10px 8px 10px;
+    opacity:.8;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    margin:0;
+    width:330px;
+    max-width:92%;
+}
+textarea {
+    border:2px solid #b4bbc1;
+    border-radius:7px;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    color:#78838e;
+    padding:7px 10px;
+    opacity:.8;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    margin:0;
+    width:330px;
+    max-width:91%;
+    height:90px;
+}
+input:focus {
+    border:2px solid #40a2cd;
+}
+select {
+    padding:7px 20px 7px 10px;
+    border:2px solid #b4bbc1;
+    border-radius:7px;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    margin: 0;
+    font-size:14px;
+    opacity:.8;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height:40px;
+    width:352px;
+    max-width:100%;
+    color:#666;
+    outline:none;
+    display: block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    line-height:16px;
+}
+select.blue {
+    color:#777;
+    background: #fff url('/ui/img/select.png') no-repeat right center;
+}
+input.required, textarea.required, select.required {
+    border:2px solid #7fce04;
+}
+.mr20 {
+    margin-right:20px;
+}
+form.stand {
+    border-radius:10px;
+    padding:10px 10px;
+    margin-top:15px;
+}
+p.button {
+    padding-top:8px;
+}
+form p.bd {
+    padding-top:15px;
+}
+
+.locale-icon span {
+    width:28px;
+    height:20px;
+    display:block;
+    float:left;
+    margin-right:20px;
+    background:transparent url('/ui/img/locales.png') no-repeat 0 0;
+}
+.locale-usa span {
+    background-position:0 0;
+}
+.locale-china span {
+    background-position: -231px 0;
+}
+.locale-france span {
+    background-position: -203px 0;
+}
+.locale-japan span {
+    background-position: -144px 0;
+}
+.locale-russia span {
+    background-position: -86px 0;
+}
+.locale-spain span {
+    background-position: -58px 0;
+}
+.locale-taiwan span {
+    background-position: -28px 0;
+}
+.locale-germany span {
+    background-position: -173px 0;
+}
+.locale-korea span {
+    background-position: -116px 0;
+}
+
+/*
+  @ Global Elements > Dropdown
+  @ Bootstrap Dropdown component overrides.
+*/
+
+ul.dropdown-menu {
+    margin-top:8px;
+}
+ul.dropdown-menu li a {
+    font-size:12px;
+    padding-top:6px;
+    padding-bottom:6px;
+}
+ul.dropdown-menu li a:hover {
+    background:#eee;
+    color:#333;
+}
+
+
+/*
+  @ Global Elements > Misc
+*/
+
+.form p {
+    padding:0px;
+    margin:0px;
+}
+.no-margin {
+    margin-left:0px;
+}
+.caret-white, .dropup .caret-white {
+    border-bottom:4px solid #FFF;
+}
+.trailer {
+    background:#000 url('/ui/img/up.png') no-repeat 10px 12px;
+    width:130px;
+    padding:10px 0px 10px 40px;
+    position:fixed;
+    bottom:20px;
+    right:0px;
+    z-index:999999;
+    color:#fff;
+    text-transform: uppercase;
+    cursor:pointer;
+    display:none;
+}
+.trailer:hover {
+    background-color:#24A5D5;
+}
+span.button-conjunction {
+    position:relative;
+    top:5px;
+}
+
+/*
+Font Import
+
+*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese);
+
+* {
+    margin:0px;
+    padding:0px;
+    font-family:"Roboto Slab", "Helvetica", "Sans-Serif";
+    -webkit-font-smoothing: antialiased;
+}
+*:focus, *:active {
+    outline: none!important;
+}
+
+
+
+/*
+CUSTOM CSS - Contact US page
+*/
+
+
+
+#pardot-form{
+
+    max-width:500px;
+    overflow: hidden;
+    padding:0 0 30px 0;
+    margin:0 auto;
+}
+
+
+#pardot-form p,
+#pardot-form label,
+#pardot-form span{
+    font-size: 17px;
+    line-height: 30px;
+    font-family: "Roboto", "Helvetica", "Sans-Serif";
+    color: #222;
+    font-weight: 300;
+
+}
+
+form.form p.required label, form.form span.required label{
+
+    background-size: 12px!important;
+}
+
+#pardot-form p {
+    width:100%;
+    margin:0;
+    padding:8px 0;
+}
+#pardot-form label{
+    width: 25%;
+    text-align: right;
+    margin-right: 1%;
+}
+#pardot-form input[type="text"],
+#pardot-form textarea,
+#pardot-form select{
+    width:70%;
+    float:left;
+    height:30px;padding:5px;
+    box-sizing: border-box;
+    height: 30px;
+    background: #f3f3f3;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color:#555;
+    font-size: 15px;
+}
+#pardot-form p.pd-radio{
+    width:70%;
+    margin-left:29%;
+}
+#pardot-form p.pd-radio label.inline{
+    margin-left: 10px;
+}
+
+#pardot-form select {
+    background: #f3f3f3 url("http://www.inmobi.com/ui/v3/img/global/select.png") no-repeat scroll right center;
+}
+
+#pardot-form textarea{
+
+    height: 120px;
+}
+#pardot-form p.submit{
+    text-align: center;
+    padding: 2px 0;
+}
+#pardot-form input[type="submit"]{
+    background: #038dcd none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #ffffff;
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 0px;
+    text-align: center;
+    width: 180px;
+    font-weight: 400;
+    border: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#pardot-form p.errors {
+    background: #f3f3f3!important;
+    color: #FF3B31;
+    text-align: center;
+}
+#pardot-form p.error.no-label {
+    display:none;
+}
+#pardot-form p.error.no-label.pd-radio {
+    display:block;
+}
+#pardot-form p.error.no-label.pd-radio input{
+    outline: 1px solid #FF3B31;
+    outline-offset:3px ;
+}
+#pardot-form p.error.no-label.pd-radio input:checked{
+    outline:none;
+}
+#pardot-form p.form-field.error input,
+#pardot-form p.form-field.error select,
+#pardot-form p.form-field.error textarea{
+    border:1px solid #FF3B31;
+}
+
+
+/*
+CUSTOM CSS - Whitepaper Download
+*/
+
+#pardot-form  p.whitepaperTerms.Company_Terms {
+    width: 100%;
+    margin-left: 1%;
+}
+
+@media (max-width: 410px){
+    #pardot-form label{
+        width: 90%;
+        text-align: left;
+        padding: 3px 13px 0 15px;
+    }
+    #pardot-form input[type="text"], #pardot-form textarea, #pardot-form select{
+        width: 90%;
+        margin-left: 0%;
+    }
+    #pardot-form p.required label, #pardot-form span.required label{
+        background: url("http://resources.inmobi.com/images/required.gif") no-repeat 0px 0px !important; ;
+    }
+
+    #pardot-form p{
+        padding: 2px 0;
+    }
+    #pardot-form p, #pardot-form label, #pardot-form span{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    #pardot-form p.pd-radio{
+        margin-left: 0;
+        width: 90%;
+    }
+
+}
+
+
+/*
+
+custom form for China SME
+
+*/
+
+body.chinaSme{
+    font-family:SimHei,"Microsoft YaHei" ;
+}
+
+body.chinaSme #pardot-form p.first_name,
+body.chinaSme #pardot-form p.last_name {
+    width:25%;
+    float:left;
+}
+body.chinaSme #pardot-form p.first_name label,
+body.chinaSme #pardot-form p.last_name label {
+    width:18%;
+}
