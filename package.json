@@ -32,10 +32,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "start:dev": "SET \"NODE_ENV=development\" && webpack-dev-server --inline --content-base public/ --history-api-fallback",
-    "start:build": "SET \"NODE_ENV=production\"",
-    "deploy": "npm run build && gh-pages -d build",
-    "deploy1": "npm build && surge -p build --domain yourdomain.surge.sh"
+    "eject": "react-scripts eject"
   }
 }
